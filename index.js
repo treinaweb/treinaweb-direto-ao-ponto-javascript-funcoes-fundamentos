@@ -1,14 +1,22 @@
-// function soma(valor1, valor2) {
-//     console.log('executou:', valor1, valor2);
-//     let resultado = valor1 + valor2;
-//     return resultado;
-// }
+// ESCOPO GLOBAL
+let nome = 'Ariel';
 
-let soma = (x, y) => x + y;
+function addNome() {
+    // ESCOPO LOCAL OU ESCOPO DA FUNÇÃO addNome
+    nome = 'Carlos';
+    console.log(nome);
 
-console.log(soma(150, 50));
+    function novoNome() {
+        // ESCOPO DA FUNÇÃO novoNome
+        nome = 'Daniel';
+        console.log(nome);
+    }
+    novoNome();
+}
 
+addNome();
 
+console.log(nome);
 
 
 
