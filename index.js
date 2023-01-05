@@ -1,8 +1,13 @@
-function myFunction() {
-    console.log('olá mundo');
+function soma() {
+    console.log(10 + 5);
 }
 
-console.log('executou');
+function myFunction() {
+    console.log('olá mundo');
+    soma();
+}
+
+myFunction();
 
 
 
