@@ -1,19 +1,17 @@
-function soma(valor1, valor2) { // parâmetro
+function soma(valor1, valor2) {
+    console.log('executou:', valor1, valor2);
     let resultado = valor1 + valor2;
     return resultado;
 }
 
-function subtracao(x, y) {
-    let resultado = x - y;
-    return resultado;
-}
+let myFunction1 = soma;
 
-let resultadoSubtracao = subtracao(30, 5);
-let resultadoSoma = soma(10, 5);
+let myFunction2 = soma;
 
-console.log(resultadoSoma);
+let resultado1 = myFunction1(150, 50);
+let resultado2 = myFunction2(30, 15);
 
-console.log(resultadoSubtracao);
+console.log('resultado', resultado1, resultado2);
 
 
 
