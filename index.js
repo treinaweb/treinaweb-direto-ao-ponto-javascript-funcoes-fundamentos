@@ -1,25 +1,9 @@
-// ESCOPO GLOBAL
-let nome = 'Ariel';
-
-function addNome() {
-    // ESCOPO LOCAL OU ESCOPO DA FUNÇÃO addNome
-    nome = 'Carlos';
-    console.log(nome);
-
-    function novoNome() {
-        // ESCOPO DA FUNÇÃO novoNome
-        nome = 'Daniel';
-        console.log(nome);
-    }
-    novoNome();
+function init() {
+    console.log('executou');
 }
+var myVar;
 
-addNome();
+init();
 
-console.log(nome);
-
-
-
-
-
-
+myVar = 'Minha variável';
+console.log(myVar);
